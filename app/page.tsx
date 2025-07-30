@@ -8,7 +8,7 @@ export default function Home() {
           Driver App Assessment
         </h1>
 
-        <Link href="/report-problem" className="block">
+        <Link href="/report-problem" className="block cursor-pointer">
           <button
             className="w-full h-14 text-lg text-white rounded-xl font-medium transition-all hover:opacity-90"
             style={{ backgroundColor: "#5B9BD5" }}
@@ -17,7 +17,7 @@ export default function Home() {
           </button>
         </Link>
 
-        <Link href="/profile" className="block">
+        <Link href="/profile" className="block cursor-pointer">
           <button
             className="w-full h-14 text-lg text-white rounded-xl font-medium transition-all hover:opacity-90"
             style={{ backgroundColor: "#5B9BD5" }}

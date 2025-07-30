@@ -15,7 +15,7 @@ export default function ReportProblemPage() {
           onClick={() => router.back()}
           className="flex items-center text-white"
         >
-          <div className="w-6 h-6 rounded-full bg-white bg-opacity-30 flex items-center justify-center mr-3">
+          <div className="w-6 h-6 rounded-full bg-white bg-opacity-30 flex items-center justify-center mr-3 cursor-pointer">
             <ArrowLeft size={14} className="text-black" />
           </div>
           <span className="text-base font-medium">Report a problem</span>
@@ -43,7 +43,7 @@ export default function ReportProblemPage() {
 
         <div className="px-6 pb-8">
           <button
-            className="w-full py-4 text-white font-semibold text-base rounded-lg"
+            className="w-full py-4 text-white font-semibold text-base rounded-lg cursor-pointer"
             style={{ backgroundColor: "#D55B5B" }}
           >
             SEND AND CONNECT
@@ -56,7 +56,7 @@ export default function ReportProblemPage() {
 
 function ProblemOption({ text }: { text: string }) {
   return (
-    <button className="w-full p-4 text-left bg-gray-100 text-gray-700 rounded-lg border-0 hover:bg-gray-200 transition-colors">
+    <button className="w-full p-4 text-left bg-gray-100 text-gray-700 rounded-lg border-0 hover:bg-gray-200 transition-colors cursor-pointer">
       {text}
     </button>
   );

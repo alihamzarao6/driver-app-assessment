@@ -6,9 +6,7 @@ export default function ProfilePage() {
   const router = useRouter();
 
   return (
-    <div
-      className="min-h-screen relative top-12 mx-4"
-    >
+    <div className="min-h-screen relative top-12 mx-4">
       <div className="h-8"></div>
 
       <div className="mx-4 mb-6">
@@ -20,7 +18,7 @@ export default function ProfilePage() {
             onClick={() => router.back()}
             className="flex items-center text-white mb-6"
           >
-            <div className="w-6 h-6 rounded-full bg-white bg-opacity-30 flex items-center justify-center mr-3">
+            <div className="w-6 h-6 rounded-full bg-white bg-opacity-30 flex items-center justify-center mr-3 cursor-pointer">
               <ArrowLeft size={16} className="text-black" />
             </div>
             <span className="text-base font-medium">My profile</span>
@@ -52,7 +50,7 @@ export default function ProfilePage() {
       </div>
 
       <div className="px-4">
-        <button className="w-full p-4 text-red-500 border border-red-500 rounded-lg bg-white hover:bg-red-50 transition-colors">
+        <button className="w-full p-4 text-red-500 border border-red-500 rounded-lg bg-white hover:bg-red-50 transition-colors cursor-pointer">
           Exit system
         </button>
       </div>
@@ -71,7 +69,7 @@ function StatRow({ label, value }: { label: string; value: string }) {
 
 function ActionButton({ text }: { text: string }) {
   return (
-    <button className="w-full p-4 text-left bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
+    <button className="cursor-pointer w-full p-4 text-left bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
       {text}
     </button>
   );
